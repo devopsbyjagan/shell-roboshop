@@ -16,7 +16,7 @@ TIMESTAMP=$(date "+%y-%m-%d %H:%M:%S")
 if [ $USERID -ne 0 ]; then
     echo -e "$TIMESTAMP [ERROR] $R Please run this script with root access $N" | tee -a $LOGS_FILE
     exit 1
-f1
+fi
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
